@@ -39,4 +39,9 @@
       
       Non Netflix, n'est pas la seule entreprise à utiliser cette technologie. Il y a aussi Amazon, Google, Microsoft et Facebook qui appliquent des techniques similaires pour tester la résilience de leurs systèmes
       
-       
+4. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+ 
+5. <font color="green">Les principaux avantages de la spécification mécanisée : </font>
+            D'après l'article, la spécification mécanisée du langage webassembly a plusieurs avantages principaux. Tout d'abord elle permet de vérifier la correction de la spécifiation formelle originale du langage. 
+
