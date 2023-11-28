@@ -42,6 +42,6 @@
 4. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
  
-5. <font color="green">Les principaux avantages de la spécification mécanisée : </font>
+5. Les principaux avantages de la spécification mécanisée : 
             D'après l'article, la spécification mécanisée du langage webassembly a plusieurs avantages principaux. Tout d'abord elle permet de vérifier la correction de la spécifiation formelle originale du langage. 
 
