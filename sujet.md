@@ -42,6 +42,20 @@
 4. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
  
-5. Les principaux avantages de la spécification mécanisée : 
-            D'après l'article, la spécification mécanisée du langage webassembly a plusieurs avantages principaux. Tout d'abord elle permet de vérifier la correction de la spécifiation formelle originale du langage. 
+5. Les principaux avantages de la spécification mécanisée :
+   D'après l'article, la spécification mécanisée du langage webassembly a plusieurs avantages principaux. Tout d'abord elle permet de vérifier la correction de la spécifiation formelle originale du langage.
+
+   a t-elle permis d'améliorer la spécification formelle originale du langage?
+   De plus, elle a permis de découvrir plusieurs problèmes dans la spécification originale, ce qui a influencé son développement.
+
+   Les dérivés de la spécification?
+   Enfin, la spécification mécanisée a permis de dériver un interpréteur et un vérificateur de type exécutables vérifiés.
+
+   Comment l'auteur vérifie la spécification?
+   L’auteur a vérifié la spécification en utilisant la preuve de la correction du système de types de WebAssembly.
+
+   La spécification supprime-t-elle la nécessité de procéder à des tests ?
+   Cependant, cette nouvelle spécification ne supprime pas la nécessité de procéder à des tests 
+   
+
 
