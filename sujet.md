@@ -16,27 +16,27 @@
 2. Sur le site nous avons constaté un problème : [" BloomFilter: Converting Double to Int "](https://issues.apache.org/jira/browse/COLLECTIONS-817) la collection-817; Il s'agit ici d'un bug global, pour le coup le problème est dû au fait que BloomFilter se voyait souvant perdre certaine valeur vu qu'il est question pour elle de faire la conversion d'un double en entier. Elle rencontrait souvent des collisions. La solution apportée est de modifier la façon dont la conversion double en int est gérée pour éviter les pertes de précision. Non les utilisateurs n'ont pas ajouté de test pour s'assurer que le bug est détecté s'il réapparait à l'avenir.
 
 3. Les expériences concrètes réalisées sont :
-   - Utilisation de Chaos Monkey, on fait la sélection de manière aléatoire des instances de machines virtuelles hébergeant les services de production de Netflix et les termine.
-   - Réalisation d'exercices Chaos Kong simulant la défaillance d'une région entière d'Amazon EC2.
-   - Exécution de tests d'injection de défaillance (FIT) où des requêtes entre les services de Netflix sont délibérément causées pour échouer.
-   - Utilisation d'hypothèses autour du comportement en état stable pour concevoir des expériences.
+      - Utilisation de Chaos Monkey, on fait la sélection de manière aléatoire des instances de machines virtuelles hébergeant les services de production de Netflix et les termine.
+      - Réalisation d'exercices Chaos Kong simulant la défaillance d'une région entière d'Amazon EC2.
+      - Exécution de tests d'injection de défaillance (FIT) où des requêtes entre les services de Netflix sont délibérément causées pour échouer.
+      - Utilisation d'hypothèses autour du comportement en état stable pour concevoir des expériences.
 
-  les conditions requises pour ces expériences sont : 
-   - Les équipes d'ingénieurs chez Netflix modifient fréquemment le code et les paramètres de configuration en production.
-   - Les expériences sont conçues pour simuler des événements du monde réel, tels que des défaillances matérielles, des pics inattendus de demandes client
-   - Netflix considère son système comme une collection de services fonctionnant comme un seul système distribué
-
-   les variables observées et quels sont les principaux résultats obtenus sont :
-    - Mesure principale de l'expérience : SPS (stream starts per second), qui indique combien d'utilisateurs commencent à diffuser une vidéo chaque seconde.
-    - Les autres métriques fines observées pendant les expériences, telles que la latence des requêtes, l'utilisation du CPU
-
-   Les principaux resultats obtenus sont : 
-     - L'utilisation de Chaos Monkey a conduit les ingénieurs de Netflix à concevoir des services capables de résister aux défaillances d'instances individuelles.
-     - L'extension de l'approche d'injection de défaillance à des scénarios plus complexes, tels que la simulation de la défaillance d'une région entière d'Amazon EC2, a amélioré la résilience globale du système.
-     - Les équipes ont développé une intuition pour évaluer les fluctuations normales par rapport aux problèmes potentiels en observant la métrique SPS.
-     - Les principes de l'ingénierie du chaos, tels que la formulation d'hypothèses, la variation des événements du monde réel, l'exécution d'expériences en production, et l'automatisation des expériences, sont     
-       énoncés comme des pratiques clés de cette discipline émergente.
+     les conditions requises pour ces expériences sont : 
+      - Les équipes d'ingénieurs chez Netflix modifient fréquemment le code et les paramètres de configuration en production.
+      - Les expériences sont conçues pour simuler des événements du monde réel, tels que des défaillances matérielles, des pics inattendus de demandes client
+      - Netflix considère son système comme une collection de services fonctionnant comme un seul système distribué
    
-   Non Netflix, n'est pas la seule entreprise à utiliser cette technologie. Il y a aussi Amazon, Google, Microsoft et Facebook qui appliquent des techniques similaires pour tester la résilience de leurs systèmes
+      les variables observées et quels sont les principaux résultats obtenus sont :
+       - Mesure principale de l'expérience : SPS (stream starts per second), qui indique combien d'utilisateurs commencent à diffuser une vidéo chaque seconde.
+       - Les autres métriques fines observées pendant les expériences, telles que la latence des requêtes, l'utilisation du CPU
    
-    
+      Les principaux resultats obtenus sont : 
+        - L'utilisation de Chaos Monkey a conduit les ingénieurs de Netflix à concevoir des services capables de résister aux défaillances d'instances individuelles.
+        - L'extension de l'approche d'injection de défaillance à des scénarios plus complexes, tels que la simulation de la défaillance d'une région entière d'Amazon EC2, a amélioré la résilience globale du système.
+        - Les équipes ont développé une intuition pour évaluer les fluctuations normales par rapport aux problèmes potentiels en observant la métrique SPS.
+        - Les principes de l'ingénierie du chaos, tels que la formulation d'hypothèses, la variation des événements du monde réel, l'exécution d'expériences en production, et l'automatisation des expériences, sont     
+          énoncés comme des pratiques clés de cette discipline émergente.
+      
+      Non Netflix, n'est pas la seule entreprise à utiliser cette technologie. Il y a aussi Amazon, Google, Microsoft et Facebook qui appliquent des techniques similaires pour tester la résilience de leurs systèmes
+      
+       
