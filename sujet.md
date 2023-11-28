@@ -31,10 +31,10 @@
        - Les autres métriques fines observées pendant les expériences, telles que la latence des requêtes, l'utilisation du CPU
    
       Les principaux resultats obtenus sont : 
-        - L'utilisation de Chaos Monkey a conduit les ingénieurs de Netflix à concevoir des services capables de résister aux défaillances d'instances individuelles.
-        - L'extension de l'approche d'injection de défaillance à des scénarios plus complexes, tels que la simulation de la défaillance d'une région entière d'Amazon EC2, a amélioré la résilience globale du système.
-        - Les équipes ont développé une intuition pour évaluer les fluctuations normales par rapport aux problèmes potentiels en observant la métrique SPS.
-        - Les principes de l'ingénierie du chaos, tels que la formulation d'hypothèses, la variation des événements du monde réel, l'exécution d'expériences en production, et l'automatisation des expériences, sont     
+       - L'utilisation de Chaos Monkey a conduit les ingénieurs de Netflix à concevoir des services capables de résister aux défaillances d'instances individuelles.
+       - L'extension de l'approche d'injection de défaillance à des scénarios plus complexes, tels que la simulation de la défaillance d'une région entière d'Amazon EC2, a amélioré la résilience globale du système.
+       - Les équipes ont développé une intuition pour évaluer les fluctuations normales par rapport aux problèmes potentiels en observant la métrique SPS.
+       - Les principes de l'ingénierie du chaos, tels que la formulation d'hypothèses, la variation des événements du monde réel, l'exécution d'expériences en production, et l'automatisation des expériences, sont     
           énoncés comme des pratiques clés de cette discipline émergente.
       
       Non Netflix, n'est pas la seule entreprise à utiliser cette technologie. Il y a aussi Amazon, Google, Microsoft et Facebook qui appliquent des techniques similaires pour tester la résilience de leurs systèmes
