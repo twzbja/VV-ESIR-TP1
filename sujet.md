@@ -39,7 +39,24 @@
       
       Non Netflix, n'est pas la seule entreprise à utiliser cette technologie. Il y a aussi Amazon, Google, Microsoft et Facebook qui appliquent des techniques similaires pour tester la résilience de leurs systèmes
       
-4. 
+4. Les principaux avantages pour WebAssembly d'avoir une spécification formelle :                                                                                                        
+       - Clean design :
+         La spécification formelle permet une conception claire et détaillée. Cela évite les ambiguités et permet une implémentation plus aisée.
+
+      - Semantique plus simple
+	 " For example, JVM bytecode verification takes more
+	 than 150 pages to describe in the current JVM specification,
+	 while for WebAssembly it fits on one page "
+	 
+     - Semantique déterministe sur tout type de hardware et avec un coût d'exéution minime
+
+     - Langage prouvé :  Cela nous assure la fiabilité, la sécurité et la conformité des programmes
+
+     - Analyse formelle et verification
+  
+Les implémentations WebAssembly doivent-elles être testées ?                                                                                                                         
+       Oui, les implémentations devraient être testées.
+La spécification formelle de WebAssembly qui lui permet d'être un langage claire et sans ambiguité, et evite les divergences lors de l'implément nous prouve qu'il est bien conçu (Que le langage est bon). Cependant reste à savoir si le resultat de l'implémentation est ce que nous souhaitions (Qu'il s'agit du bon langage implémenté). 
 
  
 5. Les principaux avantages de la spécification mécanisée :
